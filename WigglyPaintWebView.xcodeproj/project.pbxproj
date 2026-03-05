@@ -1,0 +1,247 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		111111111111111111111111 /* WigglyPaintWebViewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAA11111111111111111111 /* WigglyPaintWebViewApp.swift */; };
+		111111111111111111111112 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAA11111111111111111112 /* WebView.swift */; };
+		222222222222222222222221 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAAA11111111111111111113 /* Assets.xcassets */; };
+		222222222222222222222222 /* Resources/wigglypaint.html in Resources */ = {isa = PBXBuildFile; fileRef = AAAA11111111111111111114 /* Resources/wigglypaint.html */; };
+		333333333333333333333333 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAAA11111111111111111121 /* WebKit.framework */; };
+		333333333333333333333334 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAAA11111111111111111122 /* UIKit.framework */; };
+		333333333333333333333335 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAAA11111111111111111123 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AAAA11111111111111111111 /* WigglyPaintWebViewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WigglyPaintWebViewApp.swift; sourceTree = "<group>"; };
+		AAAA11111111111111111112 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		AAAA11111111111111111113 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AAAA11111111111111111114 /* Resources/wigglypaint.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = Resources/wigglypaint.html; sourceTree = "<group>"; };
+		AAAA11111111111111111115 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAAA1111111111111111111A /* WigglyPaintWebView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = WigglyPaintWebView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAAA11111111111111111121 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		AAAA11111111111111111122 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AAAA11111111111111111123 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		444444444444444444444444 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				333333333333333333333333 /* WebKit.framework in Frameworks */,
+				333333333333333333333334 /* UIKit.framework in Frameworks */,
+				333333333333333333333335 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		555555555555555555555555 = {
+			isa = PBXGroup;
+			children = (
+				666666666666666666666666 /* WigglyPaintWebView */,
+				777777777777777777777777,
+				888888888888888888888888,
+			);
+			sourceTree = "<group>";
+		};
+		666666666666666666666666 /* WigglyPaintWebView */ = {
+			isa = PBXGroup;
+			children = (
+				AAAA11111111111111111111 /* WigglyPaintWebViewApp.swift */,
+				AAAA11111111111111111112 /* WebView.swift */,
+				AAAA11111111111111111113 /* Assets.xcassets */,
+				AAAA11111111111111111114 /* Resources/wigglypaint.html */,
+				AAAA11111111111111111115 /* Info.plist */,
+			);
+			path = WigglyPaintWebView;
+			sourceTree = "<group>";
+		};
+		777777777777777777777777 = {
+			isa = PBXGroup;
+			children = (
+				AAAA11111111111111111121 /* WebKit.framework */,
+				AAAA11111111111111111122 /* UIKit.framework */,
+				AAAA11111111111111111123 /* Foundation.framework */,
+			);
+			sourceTree = "<group>";
+		};
+		888888888888888888888888 = {
+			isa = PBXGroup;
+			children = (
+				AAAA1111111111111111111A /* WigglyPaintWebView.app */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		999999999999999999999999 /* WigglyPaintWebView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1C1C1C1C1C1C1C1C1C1C1C1 /* Build configuration list for PBXNativeTarget "WigglyPaintWebView" */;
+			buildPhases = (
+				AAAAAAAAAAAAAAAAAAAAAAAA /* Sources */,
+				B0B0B0B0B0B0B0B0B0B0B0B0 /* Resources */,
+				444444444444444444444444 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WigglyPaintWebView;
+			productName = WigglyPaintWebView;
+			productReference = AAAA1111111111111111111A /* WigglyPaintWebView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0A0A0A0A0A0A0A0A0A0A0A0A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					999999999999999999999999 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+				};
+			};
+			buildConfigurationList = C2C2C2C2C2C2C2C2C2C2C2C2 /* Build configuration list for PBXProject "WigglyPaintWebView" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 555555555555555555555555;
+			productRefGroup = 888888888888888888888888;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				999999999999999999999999 /* WigglyPaintWebView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B0B0B0B0B0B0B0B0B0B0B0B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				222222222222222222222221 /* Assets.xcassets in Resources */,
+				222222222222222222222222 /* Resources/wigglypaint.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AAAAAAAAAAAAAAAAAAAAAAAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				111111111111111111111111 /* WigglyPaintWebViewApp.swift in Sources */,
+				111111111111111111111112 /* WebView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		121212121212121212121212 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		DDDDDDDDDDDDDDDDDDDDDDDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QHL4VZH95W;
+				INFOPLIST_FILE = WigglyPaintWebView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.decker.WigglyPaintWebView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EEEEEEEEEEEEEEEEEEEEEEEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QHL4VZH95W;
+				INFOPLIST_FILE = WigglyPaintWebView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.decker.WigglyPaintWebView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FFFFFFFFFFFFFFFFFFFFFFFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C1C1C1C1C1C1C1C1C1C1C1C1 /* Build configuration list for PBXNativeTarget "WigglyPaintWebView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDDDDDDDDDDDDDDDDDDDDDDD /* Debug */,
+				EEEEEEEEEEEEEEEEEEEEEEEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C2C2C2C2C2C2C2C2C2C2C2C2 /* Build configuration list for PBXProject "WigglyPaintWebView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFFFFFFFFFFFFFFFFFFFFFFF /* Debug */,
+				121212121212121212121212 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0A0A0A0A0A0A0A0A0A0A0A0A /* Project object */;
+}
