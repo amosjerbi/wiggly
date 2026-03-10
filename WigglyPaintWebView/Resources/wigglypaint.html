@@ -42,6 +42,7 @@ field2:{"type":"field","size":[211,25],"pos":[148,271],"locked":1,"show":"invert
 {script:title.0}
 on click do
  play["scratch"]
+ main.event["init"]
  go["main" "BoxIn"]
 end
 {end}
@@ -83,6 +84,9 @@ end
 on view do
  target.pos:dims.pos
  target.size:dims.size
+end
+
+on init do
  each f in target.frames f.map[() 0] end
 end
 
