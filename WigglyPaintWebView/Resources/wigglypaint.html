@@ -86,9 +86,6 @@ on view do
  target.size:dims.size
 end
 
-on init do
- each f in target.frames f.map[() 0] end
-end
 
 on mask x do
  hi32.toggle["transparent" x]
@@ -8014,6 +8011,14 @@ tick=_=>{
 }
 
 let id=null
+let _lastColorSave=0
+const _saveColors=()=>{
+    if(!deck)return
+    const pal=deck.patterns.pal.pix
+    // pattern indices 32-47 = palette indices 0-15
+    const ck={0:"wp_c32",1:"wp_c33",4:"wp_c36",7:"wp_c39",15:"wp_c47"}
+    Object.entries(ck).forEach(([i,k])=>localStorage.setItem(k,0xFFFFFF&pal_col_get(pal,+i)))
+}
 sync=_=>{
 	pick_palette(deck)
 	const anim=deck.patterns.anim, pal=deck.patterns.pal.pix, mask=dr.trans_mask&&uimode=='draw', fc=dr.show_anim?0|(frame_count/4):0
@@ -8054,7 +8059,7 @@ loop=stamp=>{
 	if(_tlast){const p=_tlast;_tlast=null;move(p[0],p[1])}
 	let delta=(stamp-prev_stamp)+leftover, frame=1000/60, tc=0
 	while(delta>frame){tick(),tc++,delta-=frame;if(tc==2){delta=0;break}};leftover=delta
-	sync(),prev_stamp=stamp,requestAnimationFrame(loop)
+	sync();{const _n=Date.now();if(_n-_lastColorSave>2000){_saveColors();_lastColorSave=_n}};prev_stamp=stamp,requestAnimationFrame(loop)
 	if(do_panic)setmode('object');do_panic=0
 }
 resize=_=>{
@@ -8267,4 +8272,13 @@ q('body').ondrop=e=>{
 pushstate(lmenv()),load_deck(deck_read(q('script[language="decker"]').innerText))
 const tag=decodeURI(document.URL.split('#')[1]||'');if(tag.length)iwrite(deck,lms('card'),lms(tag))
 resize(),requestAnimationFrame(loop)
+
+// Restore saved marker colors from localStorage
+// Restore saved marker colors
+{
+    const _pal=deck.patterns.pal.pix
+    const _ck2={0:'wp_c32',1:'wp_c33',4:'wp_c36',7:'wp_c39',15:'wp_c47'}
+    Object.entries(_ck2).forEach(([i,k])=>{const v=localStorage.getItem(k);if(v!==null)pal_col_set(_pal,+i,0xFF000000|+v)})
+    pick_palette(deck)
+}
 </script></body>
