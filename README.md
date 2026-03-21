@@ -6,6 +6,8 @@
 # Wiggly Paint
 Made specifically for an ipad, orginally made by https://github.com/JohnEarnest/Decker
 
+[wiggly.ajerbi.com](https://wiggly.ajerbi.com/)
+
 ## How to Use
 
 1. git clone repo
